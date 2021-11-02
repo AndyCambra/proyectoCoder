@@ -1,0 +1,35 @@
+.logo {
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #f2a2a2;
+  font-size: 3em;
+  padding-left: 10px;
+  padding-top: 0;
+  margin: 0;
+}
+.navBar {
+  display: flex;
+  width: 100vw;
+  background-color: #25594a;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.items {
+  display: flex;
+  width: 60%;
+}
+
+.items p {
+  color: #c2d7f2;
+  width: 20%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+}
+.bajada {
+  background-color: #307354;
+  margin: 0;
+  padding: 4px 11px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #c2d7f2;
+}
