@@ -1,4 +1,5 @@
 import './index.css'
+import cart from '../../iconos/cart-plus-solid.svg'
 
 const Header = () => {
   return (
@@ -13,6 +14,9 @@ const Header = () => {
           <p>Productos</p>
           <p>Cuidados</p>
           <p>Colección</p>
+          <p>
+            <img src={cart} className="cart-icon" alt="cart" />
+          </p>
         </div>
       </nav>
       <p className="bajada">Cactus de Colección Buenos Aires</p>
