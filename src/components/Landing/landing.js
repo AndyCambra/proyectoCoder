@@ -1,7 +1,7 @@
 import blossfeldia from '../../images/blossfeldia.jpg'
 import grusonii from '../../images/grusonii.jpg'
 import lithops from '../../images/lithops.jpg'
-import Counter from '../Contador/Contador'
+import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Login from '../Login/loguin'
 import './index.css'
 
@@ -13,7 +13,8 @@ const Landing = () => {
       <img src={lithops} className="photos-landing" alt="lithops" />
       <h1 className="landing-title">Bienvenidos</h1>
       <Login />
-      <Counter />
+      <h1 className="catalogo_title">Catalogo</h1>
+      <ItemListContainer />
     </div>
   )
 }

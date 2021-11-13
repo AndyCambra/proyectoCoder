@@ -26,12 +26,16 @@ const Counter = () => {
     realTime.getSeconds()
   console.log(instantTime)
   return (
-    <section className="counter-date">
-      <button onClick={agregar}>+</button>
-      <p>{number}</p>
-      <button onClick={sacar}>-</button>
-      <p>{instantTime}</p>
-    </section>
+    <>
+      <section className="counter-date">
+        <button onClick={agregar}>+</button>
+        <p>{number}</p>
+        <button onClick={sacar}>-</button>
+      </section>
+      <div className="data-date">
+        <p>{instantTime}</p>
+      </div>
+    </>
   )
 }
 export default Counter

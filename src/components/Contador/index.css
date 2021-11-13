@@ -1,9 +1,9 @@
 .counter-date {
   background-color: #c2d7f2;
-  border: 1px dotted black;
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 2px;
+  width: 94%;
 }
 .counter-date button {
   width: 40px;
@@ -16,4 +16,8 @@
 .counter-date p {
   margin: auto;
   font-size: 16px;
+}
+.data-date {
+  display: inline;
+  font-size: 10px;
 }

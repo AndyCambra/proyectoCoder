@@ -1,0 +1,47 @@
+.card {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+.card h3 {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+  border-bottom: 3px dotted #f2a2a2;
+  margin-right: 10px;
+  font-variant-caps: all-petite-caps;
+  font-size: 1.5em;
+}
+.info-card {
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  line-height: 0.5em;
+  font-size: 0.9em;
+}
+.img-products {
+  margin-top: 5px;
+  padding: 0;
+  width: 95%;
+  height: 230px;
+}
+.card-container {
+  display: flex;
+  width: 20vw;
+  flex-direction: column;
+  border: 2px solid #307354;
+  background-color: white;
+  box-shadow: 4px 4px 10px #545755;
+  padding: 10px;
+}
+.top {
+  text-align: right;
+  background-color: #25594a;
+  line-height: 0.3em;
+}
+.top p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  margin-right: 10px;
+  color: white;
+}

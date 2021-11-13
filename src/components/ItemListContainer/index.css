@@ -1,0 +1,9 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  flex-wrap: wrap;
+  padding: 20px;
+  float: left;
+}

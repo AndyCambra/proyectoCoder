@@ -17,3 +17,11 @@
   margin: 0;
   color: #25594a;
 }
+.catalogo_title {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 3px;
+  border-bottom: 2px dotted #25594a;
+  color: #25594a;
+  padding-bottom: 4px;
+}
