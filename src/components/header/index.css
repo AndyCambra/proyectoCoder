@@ -17,6 +17,9 @@
 .items {
   display: flex;
   width: 60%;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
 }
 
 .items p {

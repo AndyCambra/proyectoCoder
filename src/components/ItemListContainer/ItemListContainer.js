@@ -20,6 +20,7 @@ function ItemListContainer() {
     })
   return (
     <>
+      <h1 className="catalogo_title">Catalogo</h1>
       <ItemList items={items} />
     </>
   )

@@ -1,5 +1,6 @@
 import './index.css'
 import Counter from '../Contador/Contador'
+import { Link } from 'react-router-dom'
 
 const Item = ({ item }) => {
   return (
@@ -15,6 +16,9 @@ const Item = ({ item }) => {
             <p>Familia: {item.family}</p>
             <p>Maceta: {item.potsize}</p>
             <p>Precio: ${item.precio}</p>
+            <Link to={`/productos/${item.id}`}>
+              <p>Ver más...</p>
+            </Link>
           </div>
           <Counter />
         </div>

@@ -13,8 +13,6 @@ const Landing = () => {
       <img src={lithops} className="photos-landing" alt="lithops" />
       <h1 className="landing-title">Bienvenidos</h1>
       <Login />
-      <h1 className="catalogo_title">Catalogo</h1>
-      <ItemListContainer />
     </div>
   )
 }

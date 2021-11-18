@@ -4,8 +4,8 @@ import Counter from '../Contador/Contador'
 const ItemDetail = ({ detail }) => {
   return (
     <div className="list-container">
-      <article className="card">
-        <div className="card-container">
+      <article className="card-detail">
+        <div className="card-container-d">
           <div className="top">
             <p>{detail.category}</p>
           </div>

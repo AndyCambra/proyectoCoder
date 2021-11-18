@@ -1,9 +1,9 @@
 import { fakeObjet } from '../../fakeObjet'
 import ItemDetail from './itemDetail'
-import { useEffect, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 
 function ItemDetailContainer() {
-  const [detail, setDetail] = useState()
+  const [detail, setDetail] = useState({})
   useEffect(() => {
     const getProducts = new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -21,10 +21,9 @@ function ItemDetailContainer() {
     console.log(11, detail)
   })
   return (
-    <>
-      {' '}
+    <Fragment>
       <ItemDetail detail={detail} />
-    </>
+    </Fragment>
   )
 }
 export default ItemDetailContainer

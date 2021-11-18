@@ -1,5 +1,6 @@
 import './index.css'
 import cart from '../../iconos/cart-plus-solid.svg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -9,11 +10,12 @@ const Header = () => {
           <h2 className="logo">CCBA</h2>
         </div>
         <div className="items">
-          <p>Home</p>
-          <p>Contacto</p>
-          <p>Productos</p>
-          <p>Cuidados</p>
-          <p>Colección</p>
+          <Link to="/home"><p>Home</p></Link>
+          <Link to="/contacto"><p>Contacto</p></Link>
+          <Link to="/productos"><p>Productos</p></Link>
+          <Link to="/cuidados"><p>Cuidados</p></Link>
+          <Link to="/coleccion"><p>Colección</p></Link>
+          
           <p>
             <img src={cart} className="cart-icon" alt="cart" />
           </p>
