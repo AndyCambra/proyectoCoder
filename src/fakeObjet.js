@@ -5,7 +5,8 @@ export const fakeObjet = {
   name: 'Blossfeldia',
   potsize: '21',
   precio: '2.500',
-  img: 'images/blossfeldia.jpg',
+  img:
+    'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/blossfeldia_trqjlu.jpg',
   stock: 25,
   cuidados:
     'Solo se debe regar cuando el sustrato este completamente seco en los meses de primavera y verano. En los meses fríos se debe reducir el riego. Es bien fácil ahogar estos cactus en invierno.',

@@ -2,8 +2,11 @@
   line-height: normal;
 }
 .card-detail {
-  width: 100vw;
+  width: 70vw;
 }
 .card-container-d {
-  width: 100vw;
+  width: 70vw;
+}
+.img-products-detail {
+  width: none;
 }

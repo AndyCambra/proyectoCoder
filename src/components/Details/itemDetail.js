@@ -11,7 +11,7 @@ const ItemDetail = ({ detail }) => {
           </div>
           <h3>{detail.name}</h3>
           <img
-            className="img-products"
+            className="img-products-detail"
             src={detail.img}
             alt={detail.name}
           ></img>

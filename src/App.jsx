@@ -5,6 +5,10 @@ import ItemDetailContainer from './components/Details/itemDetailContainer'
 import Home from  './pages/Home/home'
 import Header from './components/header/header'
 import Productos from './pages/Productos/productos'
+import Contacto from './pages/Contacto/contacto'
+import Cuidados from './pages/Cuidados/Cuidados'
+import Coleccion from './pages/Coleccion/Coleccion'
+
 
 
 const App = () => {
@@ -15,9 +19,12 @@ const App = () => {
       <Header />
       
     <Routes>
-      <Route path='/home' element={<Home />} />
+      <Route path='/' element={<Home />} />
       <Route path='/productos' element={<Productos />} />
-      <Route path='/productos/:productosId' element={<ItemDetailContainer />} />
+      <Route path='/productos/:categoryId' element={<Productos />} />
+      <Route path='/contacto' element={<Contacto />} />
+      <Route path='/cuidados' element={<Cuidados />} />
+      <Route path='/coleccion' element={<Coleccion />} />
     </Routes>
       
      

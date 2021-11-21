@@ -6,7 +6,9 @@ export const products = [
     name: 'Blossfeldia',
     potsize: '21',
     precio: '2.500',
-    img: 'images/blossfeldia.jpg',
+    img:
+      'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/blossfeldia_trqjlu.jpg',
+    categoryId: 1,
   },
   {
     id: 1,
@@ -15,7 +17,9 @@ export const products = [
     name: 'Grusonii',
     potsize: '24',
     precio: '4.200',
-    img: 'images/grusonii.jpg',
+    img:
+      'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/grusonii_lu0jbx.jpg',
+    categoryId: 1,
   },
   {
     id: 2,
@@ -24,7 +28,9 @@ export const products = [
     name: 'San Pedro',
     potsize: '18',
     precio: '3.200',
-    img: 'images/sanpedro.jpg',
+    img:
+      'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/sanpedro_fbexwa.jpg',
+    categoryId: 1,
   },
   {
     id: 3,
@@ -33,7 +39,9 @@ export const products = [
     name: 'Perlé',
     potsize: '14',
     precio: '1.200',
-    img: 'images/perle.jpg',
+    img:
+      'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/perle_mlsfsg.jpg',
+    categoryId: 2,
   },
   {
     id: 4,
@@ -42,6 +50,8 @@ export const products = [
     name: 'Alienor',
     potsize: '15',
     precio: '1.100',
-    img: 'images/alienor.jpg',
+    img:
+      'https://res.cloudinary.com/danb0chax/image/upload/v1637498590/alienor_yzvxzg.jpg',
+    categoryId: 2,
   },
 ]

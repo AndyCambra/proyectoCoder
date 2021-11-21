@@ -19,7 +19,8 @@ function ItemDetailContainer() {
         console.log(error)
       })
     console.log(11, detail)
-  })
+  }, [detail])
+
   return (
     <Fragment>
       <ItemDetail detail={detail} />
