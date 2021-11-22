@@ -1,13 +1,11 @@
 import { products } from '../../ArrayProducts'
 import ItemList from '../ItemList/ItemList'
-import '../../ArrayProducts.js'
 import './index.css'
-
-import { useEffect, useState } from 'react/cjs/react.development'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 function ItemListContainer() {
-  const { categoryId } = useParams()
+  const { category } = useParams()
   const [items, setItems] = useState([])
 
   useEffect(() => {
@@ -20,15 +18,15 @@ function ItemListContainer() {
     traerProducts
       .then((res) => {
         const selectCategory = res.filter(
-          (prod) => prod.categoryId === `${categoryId}`,
+          (prod) => prod.category === `${category}`,
         )
-        categoryId === undefined ? setItems(res) : setItems(selectCategory)
+        category === undefined ? setItems(res) : setItems(selectCategory)
         console.log(setItems)
       })
       .catch((error) => {
         console.log(error)
       })
-  }, [categoryId])
+  }, [category])
 
   return (
     <>

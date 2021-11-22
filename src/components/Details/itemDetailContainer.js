@@ -1,29 +1,33 @@
-import { fakeObjet } from '../../fakeObjet'
+import { products } from '../../ArrayProducts'
 import ItemDetail from './itemDetail'
 import { Fragment, useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 function ItemDetailContainer() {
-  const [detail, setDetail] = useState({})
+  const { id } = useParams()
+  const [item, setItem] = useState({})
+
   useEffect(() => {
-    const getProducts = new Promise((resolve, reject) => {
+    const getProduct = new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(fakeObjet)
-      }, 2000)
+        resolve(products)
+      }, 1000)
+      console.log(products)
     })
-    getProducts
+    getProduct
       .then((res) => {
-        setDetail(res)
-        console.log(res)
+        const itemFind = res.find((prod) => prod.id === parseInt(id))
+
+        setItem(itemFind)
       })
       .catch((error) => {
         console.log(error)
       })
-    console.log(11, detail)
-  }, [detail])
+  }, [id])
 
   return (
     <Fragment>
-      <ItemDetail detail={detail} />
+      <ItemDetail item={item} />
     </Fragment>
   )
 }

@@ -11,12 +11,14 @@ const Item = ({ item }) => {
             <p>{item.category}</p>
           </div>
           <h3>{item.name}</h3>
-          <img className="img-products" src={item.img} alt={item.name}></img>
+          <Link to={`/item/${item.id}`}>
+            <img className="img-products" src={item.img} alt={item.name}></img>
+          </Link>
           <div className="info-card">
             <p>Familia: {item.family}</p>
             <p>Maceta: {item.potsize}</p>
             <p>Precio: ${item.precio}</p>
-            <Link to={`/productos/${item.id}`}>
+            <Link to={`/item/${item.id}`}>
               <p>Ver más...</p>
             </Link>
           </div>

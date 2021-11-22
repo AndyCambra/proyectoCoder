@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 0,
-    category: 'Cactus',
+    category: 'cactus',
     family: 'Mamilaria',
     name: 'Blossfeldia',
     potsize: '21',
@@ -12,7 +12,7 @@ export const products = [
   },
   {
     id: 1,
-    category: 'Cactus',
+    category: 'cactus',
     family: 'Mamilaria',
     name: 'Grusonii',
     potsize: '24',
@@ -23,7 +23,7 @@ export const products = [
   },
   {
     id: 2,
-    category: 'Cactus',
+    category: 'cactus',
     family: 'Cereus',
     name: 'San Pedro',
     potsize: '18',
@@ -34,7 +34,7 @@ export const products = [
   },
   {
     id: 3,
-    category: 'Suculenta',
+    category: 'suculentas',
     family: 'Echeveria',
     name: 'Perlé',
     potsize: '14',
@@ -45,7 +45,7 @@ export const products = [
   },
   {
     id: 4,
-    category: 'Suculenta',
+    category: 'suculentas',
     family: 'Echeveria',
     name: 'Alienor',
     potsize: '15',
