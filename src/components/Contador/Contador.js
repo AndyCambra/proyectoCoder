@@ -1,10 +1,15 @@
 import { useState } from 'react'
 import './index.css'
 
-const Counter = () => {
+const Counter = (stock) => {
+  const uniqueStock = stock.stock
+  console.log(uniqueStock)
+
   const [number, setNumber] = useState(0)
   const agregar = () => {
-    setNumber(number + 1)
+    if (number < uniqueStock) {
+      setNumber(number + 1)
+    }
   }
   const sacar = () => {
     if (number > 0) {

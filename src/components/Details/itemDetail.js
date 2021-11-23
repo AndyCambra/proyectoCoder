@@ -2,7 +2,8 @@ import './index.css'
 import Counter from '../Contador/Contador'
 
 const ItemDetail = ({ item }) => {
-  console.log(111, item)
+  const stock = item.stock
+  console.log(stock)
   return (
     <div className="list-container">
       <article className="card-detail">
@@ -25,7 +26,7 @@ const ItemDetail = ({ item }) => {
             <p className="long-text">Origen: {item.origen}</p>
             <p className="long-text">Cultivo: {item.cultivo}</p>
           </div>
-          <Counter />
+          <Counter stock={stock} />
         </div>
       </article>
     </div>
