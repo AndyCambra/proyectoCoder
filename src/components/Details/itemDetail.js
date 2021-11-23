@@ -3,7 +3,8 @@ import Counter from '../Contador/Contador'
 
 const ItemDetail = ({ item }) => {
   const stock = item.stock
-  console.log(stock)
+  const name = item.name
+  console.log(stock, name)
   return (
     <div className="list-container">
       <article className="card-detail">
@@ -26,7 +27,7 @@ const ItemDetail = ({ item }) => {
             <p className="long-text">Origen: {item.origen}</p>
             <p className="long-text">Cultivo: {item.cultivo}</p>
           </div>
-          <Counter stock={stock} />
+          <Counter stock={stock} name={name} />
         </div>
       </article>
     </div>

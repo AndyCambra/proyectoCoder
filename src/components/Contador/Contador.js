@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import './index.css'
 
-const Counter = (stock) => {
-  const uniqueStock = stock.stock
-  console.log(uniqueStock)
+const Counter = (props) => {
+  const uniqueStock = props.stock
+  const uniqueName = props.name
+  console.log(22, uniqueStock, uniqueName)
 
   const [number, setNumber] = useState(0)
   const agregar = () => {
     if (number < uniqueStock) {
       setNumber(number + 1)
+      console.log(`Sumaste al carrito ${number + 1} ${uniqueName}`)
     }
   }
   const sacar = () => {
@@ -16,6 +18,7 @@ const Counter = (stock) => {
       setNumber(number - 1)
     }
   }
+
   let realTime = new Date()
   let instantTime =
     realTime.getDate() +
