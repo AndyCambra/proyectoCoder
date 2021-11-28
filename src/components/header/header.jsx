@@ -17,7 +17,7 @@ const Header = () => {
           <Link to="/coleccion"><p>Colección</p></Link>
           
           <p>
-            <img src={cart} className="cart-icon" alt="cart" />
+           <Link to="/cart"> <img src={cart} className="cart-icon" alt="cart" /></Link>
           </p>
         </div>
       </nav>

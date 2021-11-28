@@ -23,13 +23,13 @@
   margin-top: 5px;
   padding: 0;
   width: 95%;
-  height: 150px;
+  height: 200px;
 }
 .card-container {
   display: flex;
   width: 20vw;
   flex-direction: column;
-  border: 2px solid #307354;
+  border: 2px solid #5a8d75;
   background-color: white;
   box-shadow: 4px 4px 10px #545755;
   padding: 10px;

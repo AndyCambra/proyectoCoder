@@ -22,7 +22,6 @@ const Item = ({ item }) => {
               <p>Ver más...</p>
             </Link>
           </div>
-          <Counter />
         </div>
       </article>
     </div>

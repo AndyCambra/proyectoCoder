@@ -8,6 +8,7 @@ import Productos from './pages/Productos/productos'
 import Contacto from './pages/Contacto/contacto'
 import Cuidados from './pages/Cuidados/Cuidados'
 import Coleccion from './pages/Coleccion/Coleccion'
+import Cart from './components/Cart/ cart'
 
 
 
@@ -26,6 +27,7 @@ const App = () => {
       <Route path='/cuidados' element={<Cuidados />} />
       <Route path='/coleccion' element={<Coleccion />} />
       <Route path='/item/:id' element={<ItemDetailContainer />} />
+      <Route path='/cart' element={<Cart />} />
 
     </Routes>
       

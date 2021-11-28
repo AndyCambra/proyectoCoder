@@ -1,18 +1,16 @@
 import './index.css'
 import Counter from '../Contador/Contador'
+import { Link } from 'react-router-dom'
 
-const ItemDetail = ({ item }) => {
-  const stock = item.stock
-  const name = item.name
-  console.log(stock, name)
+const ItemDetail = ({ item, onAdd, goCart }) => {
   return (
-    <div className="list-container">
-      <article className="card-detail">
+    <div className="list-containerd">
+      <article className="card-detaild">
+        <div className="topd">
+          <p>{item.category}</p>
+        </div>
+        <h2>{item.name}</h2>
         <div className="card-container-d">
-          <div className="top">
-            <p>{item.category}</p>
-          </div>
-          <h3>{item.name}</h3>
           <img
             className="img-products-detail"
             src={item.img}
@@ -20,16 +18,29 @@ const ItemDetail = ({ item }) => {
           ></img>
           <div className="info-card">
             <p>Familia: {item.family}</p>
-            <p>Maceta: {item.potsize}</p>
-            <p>Precio: ${item.precio}</p>
-            <p>Cantidad disponible: {item.stock}</p>
             <p className="long-text">Cuidados: {item.cuidados}</p>
             <p className="long-text">Origen: {item.origen}</p>
             <p className="long-text">Cultivo: {item.cultivo}</p>
           </div>
-          <Counter stock={stock} name={name} />
         </div>
       </article>
+      <div className="data-counter">
+        <div className="data-plant">
+          <h3>{item.name}</h3>
+          <p>Maceta: {item.potsize}</p>
+          <p>Precio: ${item.precio}</p>
+          <p>Cantidad disponible: {item.stock}</p>
+        </div>
+        {goCart ? (
+          <>
+            <Link to="/Cart">Terminar compra</Link>
+          </>
+        ) : (
+          <>
+            <Counter stock={item.stock} onAdd={onAdd} />
+          </>
+        )}
+      </div>
     </div>
   )
 }

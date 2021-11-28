@@ -1,16 +1,11 @@
 import { useState } from 'react'
 import './index.css'
 
-const Counter = (props) => {
-  const uniqueStock = props.stock
-  const uniqueName = props.name
-  console.log(22, uniqueStock, uniqueName)
-
+const Counter = ({ stock, onAdd }) => {
   const [number, setNumber] = useState(0)
   const agregar = () => {
-    if (number < uniqueStock) {
+    if (number !== stock) {
       setNumber(number + 1)
-      console.log(`Sumaste al carrito ${number + 1} ${uniqueName}`)
     }
   }
   const sacar = () => {
@@ -40,6 +35,14 @@ const Counter = (props) => {
         <p>{number}</p>
         <button onClick={sacar}>-</button>
       </section>
+      <button
+        className="add-button"
+        disabled={number === 0}
+        onClick={() => onAdd(number)}
+      >
+        Agregar al carrito
+      </button>
+
       <div className="data-date">
         <p>{instantTime}</p>
       </div>
