@@ -1,5 +1,5 @@
 import './index.css'
-import Counter from '../Contador/Contador'
+
 import { Link } from 'react-router-dom'
 
 const Item = ({ item }) => {

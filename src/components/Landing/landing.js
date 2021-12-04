@@ -1,7 +1,6 @@
 import blossfeldia from '../../images/blossfeldia.jpg'
 import grusonii from '../../images/grusonii.jpg'
 import lithops from '../../images/lithops.jpg'
-import ItemListContainer from '../ItemListContainer/ItemListContainer'
 import Login from '../Login/loguin'
 import './index.css'
 

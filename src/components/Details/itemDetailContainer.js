@@ -1,13 +1,15 @@
 import { products } from '../../ArrayProducts'
 import ItemDetail from './itemDetail'
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../../Context/CartContext'
 
 function ItemDetailContainer() {
   const { id } = useParams()
   const [item, setItem] = useState({})
   const [goCart, setGoCart] = useState(false)
   const [loading, setLoaging] = useState(true)
+  const { addToCart } = useContext(CartContext)
 
   useEffect(() => {
     setLoaging(true)
@@ -28,7 +30,8 @@ function ItemDetailContainer() {
   }, [id])
 
   const onAdd = (cantidad) => {
-    console.log({ ...item, cantidad })
+    //console.log({ ...item, cantidad })
+    addToCart(item, cantidad)
     setGoCart(true)
   }
 

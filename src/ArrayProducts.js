@@ -5,7 +5,7 @@ export const products = [
     family: 'Mamilaria',
     name: 'Blossfeldia',
     potsize: '21',
-    precio: '2.500',
+    precio: 2500,
     img:
       'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/blossfeldia_trqjlu.jpg',
     categoryId: 1,
@@ -25,7 +25,7 @@ export const products = [
     family: 'Mamilaria',
     name: 'Grusonii',
     potsize: '24',
-    precio: '4.200',
+    precio: 4200,
     img:
       'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/grusonii_lu0jbx.jpg',
     categoryId: 1,
@@ -45,7 +45,7 @@ export const products = [
     family: 'Cereus',
     name: 'San Pedro',
     potsize: '18',
-    precio: '3.200',
+    precio: 3200,
     img:
       'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/sanpedro_fbexwa.jpg',
     categoryId: 1,
@@ -65,7 +65,7 @@ export const products = [
     family: 'Echeveria',
     name: 'Perlé',
     potsize: '14',
-    precio: '1.200',
+    precio: 1200,
     img:
       'https://res.cloudinary.com/danb0chax/image/upload/v1637498591/perle_mlsfsg.jpg',
     categoryId: 2,
@@ -85,7 +85,7 @@ export const products = [
     family: 'Echeveria',
     name: 'Alienor',
     potsize: '15',
-    precio: '1.100',
+    precio: 1100,
     img:
       'https://res.cloudinary.com/danb0chax/image/upload/v1637498590/alienor_yzvxzg.jpg',
     categoryId: 2,
