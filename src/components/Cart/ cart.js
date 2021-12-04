@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
+
 import { CartContext } from '../../Context/CartContext'
 
 const Cart = () => {
-  const { cart, eliminar, total } = useContext(CartContext)
+  const { cart, eliminar, totalCompra, deleteItem } = useContext(CartContext)
   return (
     <div>
       {cart.map((item) => (
@@ -10,8 +11,10 @@ const Cart = () => {
           <p>
             {item.cantidad} {item.name} $ {item.precio}
           </p>
+          <button onClick={() => deleteItem(item)}>Eliminar</button>
         </div>
       ))}
+      <p>total: {totalCompra}</p>
       <button onClick={eliminar}>Vaciar Carrito</button>
     </div>
   )
