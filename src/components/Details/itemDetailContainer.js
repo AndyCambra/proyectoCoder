@@ -3,6 +3,7 @@ import ItemDetail from './itemDetail'
 import { Fragment, useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { CartContext } from '../../Context/CartContext'
+import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
 function ItemDetailContainer() {
   const { id } = useParams()
@@ -13,17 +14,18 @@ function ItemDetailContainer() {
 
   useEffect(() => {
     setLoaging(true)
-    const getProduct = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(products)
-      }, 1000)
-    })
-    getProduct
-      .then((res) => {
-        const itemFind = res.find((prod) => prod.id === parseInt(id))
-        setItem(itemFind)
+
+    const db = getFirestore()
+    const ref = collection(db, 'products')
+
+    getDocs(ref)
+      .then((snapshot) => {
+        const itemFind = snapshot.docs.map((prod) => prod.data())
+
+        setItem(itemFind.find((prod) => prod.id === parseInt(id)))
         setLoaging(false)
       })
+
       .catch((error) => {
         console.log(error)
       })
