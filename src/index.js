@@ -6,10 +6,9 @@ import reportWebVitals from './reportWebVitals'
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+/* import { products } from './ArrayProducts'
+import { addDoc, getFirestore, collection } from '@firebase/firestore' */
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: 'AIzaSyAKBBU16LIhsrrLmDeZKdAtkeTxaqawLVA',
   authDomain: 'ccba-bc5f1.firebaseapp.com',
@@ -21,6 +20,11 @@ const firebaseConfig = {
 
 // Initialize Firebase
 initializeApp(firebaseConfig)
+
+/* const db = getFirestore()
+const ref = collection(db, 'products')
+
+products.map((product) => addDoc(ref, product)) */
 
 ReactDOM.render(
   <React.StrictMode>

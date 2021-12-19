@@ -1,4 +1,3 @@
-import { products } from '../../ArrayProducts'
 import ItemList from '../ItemList/ItemList'
 import './index.css'
 import { useEffect, useState } from 'react'
@@ -15,10 +14,12 @@ function ItemListContainer() {
 
     getDocs(ref)
       .then((snapshot) => {
-        const filteredItems = snapshot.docs.map((p) => p.data())
-        return category
-          ? setItems(filteredItems.filter((p) => p.category === category))
-          : setItems(filteredItems)
+        const products = snapshot.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() }
+        })
+        console.log(products)
+        const filteredItems = products.filter((p) => p.category === category)
+        category === undefined ? setItems(products) : setItems(filteredItems)
       })
 
       .catch((error) => {

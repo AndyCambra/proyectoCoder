@@ -1,6 +1,5 @@
 export const products = [
   {
-    id: 0,
     category: 'cactus',
     family: 'Mamilaria',
     name: 'Blossfeldia',
@@ -20,7 +19,6 @@ export const products = [
       'Se multiplica por semilla o vástagos basales, generalmente se injerta para acelerar su crecimiento.',
   },
   {
-    id: 1,
     category: 'cactus',
     family: 'Mamilaria',
     name: 'Grusonii',
@@ -40,7 +38,6 @@ export const products = [
       'Se multiplica por semilla o vástagos basales, generalmente se injerta para acelerar su crecimiento.',
   },
   {
-    id: 2,
     category: 'cactus',
     family: 'Cereus',
     name: 'San Pedro',
@@ -60,7 +57,6 @@ export const products = [
       'Se multiplica por semilla o vástagos basales, generalmente se injerta para acelerar su crecimiento.',
   },
   {
-    id: 3,
     category: 'suculentas',
     family: 'Echeveria',
     name: 'Perlé',
@@ -80,7 +76,6 @@ export const products = [
       'Se multiplica por semilla o vástagos basales, generalmente se injerta para acelerar su crecimiento.',
   },
   {
-    id: 4,
     category: 'suculentas',
     family: 'Echeveria',
     name: 'Alienor',

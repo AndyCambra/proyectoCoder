@@ -7,6 +7,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([])
   const [totalCompra, setTotalCompra] = useState(0)
   const [itemQty, setItemQty] = useState(0)
+  const [userEmail, setUserEmail] = useState('')
 
   const addToCart = (item, cantidad) => {
     let total = 0
@@ -37,19 +38,35 @@ export const CartProvider = ({ children }) => {
     setTotalCompra(0)
     setItemQty(0)
   }
+  const getUser = (form) => {
+    setUserEmail(form)
+  }
   console.log(1, cart)
   console.log(11, totalCompra)
 
   return (
     <CartContext.Provider
-      value={{ addToCart, cart, eliminar, totalCompra, deleteItem, itemQty }}
+      value={{
+        addToCart,
+        cart,
+        eliminar,
+        totalCompra,
+        deleteItem,
+        itemQty,
+        getUser,
+        userEmail,
+      }}
     >
       {children}
     </CartContext.Provider>
   )
 }
-/* cart?.length !== 0 
-
-? Acá iría el código que tenías anteriormente mostrando los productos 
-
-: <h2> Aún no agregaste productos al carrito </h2> */
+/* 
+const db = getFirestore()
+        const ref = collection(db, 'products')
+        getDocs(ref)
+        .then((snapShot) => {
+            setProducts(snapShot.docs.map((doc) => ({ id: doc.id, ...doc.data()})))
+           
+            setIsLoading(false)
+          }) */

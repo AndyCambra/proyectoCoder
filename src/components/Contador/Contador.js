@@ -3,6 +3,7 @@ import './index.css'
 
 const Counter = ({ stock, onAdd }) => {
   const [number, setNumber] = useState(0)
+
   const agregar = () => {
     if (number !== stock) {
       setNumber(number + 1)
@@ -14,20 +15,6 @@ const Counter = ({ stock, onAdd }) => {
     }
   }
 
-  let realTime = new Date()
-  let instantTime =
-    realTime.getDate() +
-    '/' +
-    realTime.getMonth() +
-    '/' +
-    realTime.getFullYear() +
-    '  ' +
-    realTime.getHours() +
-    ':' +
-    realTime.getMinutes() +
-    ':' +
-    realTime.getSeconds()
-  console.log(instantTime)
   return (
     <>
       <section className="counter-date">
@@ -42,10 +29,6 @@ const Counter = ({ stock, onAdd }) => {
       >
         Agregar al carrito
       </button>
-
-      <div className="data-date">
-        <p>{instantTime}</p>
-      </div>
     </>
   )
 }

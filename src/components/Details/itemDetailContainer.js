@@ -1,9 +1,8 @@
-import { products } from '../../ArrayProducts'
 import ItemDetail from './itemDetail'
 import { Fragment, useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { CartContext } from '../../Context/CartContext'
-import { getFirestore, collection, getDocs } from 'firebase/firestore'
+import { getFirestore, getDoc, doc } from 'firebase/firestore'
 
 function ItemDetailContainer() {
   const { id } = useParams()
@@ -16,13 +15,11 @@ function ItemDetailContainer() {
     setLoaging(true)
 
     const db = getFirestore()
-    const ref = collection(db, 'products')
+    const ref = doc(db, 'products', id)
 
-    getDocs(ref)
+    getDoc(ref)
       .then((snapshot) => {
-        const itemFind = snapshot.docs.map((prod) => prod.data())
-
-        setItem(itemFind.find((prod) => prod.id === parseInt(id)))
+        setItem({ id: snapshot.id, ...snapshot.data() })
         setLoaging(false)
       })
 
