@@ -1,12 +1,21 @@
 .info-card {
   font-weight: 700;
 }
+.info-card h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #312c23;
+  text-align: left;
+}
 .long-text {
   line-height: normal;
   font-weight: 300;
+  text-align: left;
+  font-size: 1em;
 }
 .card-detaild {
   width: 70vw;
+  padding: 5px;
 }
 .img-products-detail {
   width: none;
@@ -22,29 +31,50 @@
   margin: 15px 15px 0px 15px;
 }
 .list-containerd {
-  width: 100vw;
+  width: 90vw;
+  margin: 10px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-bottom: 10px;
   border-bottom: 1px solid #307354;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px #545755;
 }
 .topd {
-  height: 35px;
-  background-color: #307354;
+  height: 30px;
+  background-color: #312c23;
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4em;
   text-align: right;
   padding-right: 10px;
 }
+.plantname {
+  color: #307354;
+  font-weight: 300;
+  font-size: 2em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 .card-container-d {
   display: flex;
   column-gap: 15px;
+  margin-top: 0;
 }
+
 .data-plant {
   font-family: 'Open Sans', sans-serif;
 }
+.data-plant h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #000;
+  font-size: 2em;
+  margin: 10px 0 10px;
+}
 .data-plant p {
   line-height: 1em;
+  font-size: medium;
 }

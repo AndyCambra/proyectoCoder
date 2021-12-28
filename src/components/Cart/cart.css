@@ -1,0 +1,50 @@
+.result {
+  font-size: 1.5em;
+  margin-left: 20px;
+}
+.result p {
+  margin-right: 30px;
+}
+.B-eliminar {
+  background-color: #f2a2a2;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  height: 25px;
+  width: 100px;
+  font-size: 0.6em;
+}
+.result-det {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+.totalcompra {
+  margin-left: 20px;
+  font-size: 1.8em;
+  border-top: 1px solid #000;
+  width: 30%;
+  padding-top: 15px;
+}
+.B-vaciar {
+  background-color: #f2a2a2;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-left: 20px;
+}
+.formuser {
+  margin: 20px;
+  border: 1px solid #f2a2a2;
+  background-color: aliceblue;
+  padding: 10px;
+  width: 50%;
+}
+.formuser p {
+  margin-top: 5px;
+  font-weight: 700;
+}
+.formuser input {
+  width: 200px;
+  margin-right: 20px;
+}

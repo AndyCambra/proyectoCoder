@@ -9,7 +9,7 @@ const ItemDetail = ({ item, onAdd, goCart }) => {
         <div className="topd">
           <p>{item.category}</p>
         </div>
-        <h2>{item.name}</h2>
+        <h2 className="plantname">{item.name}</h2>
         <div className="card-container-d">
           <img
             className="img-products-detail"
@@ -17,7 +17,7 @@ const ItemDetail = ({ item, onAdd, goCart }) => {
             alt={item.name}
           ></img>
           <div className="info-card">
-            <p>Familia: {item.family}</p>
+            <h3>Familia: {item.family}</h3>
             <p className="long-text">Cuidados: {item.cuidados}</p>
             <p className="long-text">Origen: {item.origen}</p>
             <p className="long-text">Cultivo: {item.cultivo}</p>

@@ -1,3 +1,7 @@
+import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
+import { CartContext } from '../../Context/CartContext'
+import Mensaje from '../Mensaje/Mensaje'
 import {
   getFirestore,
   collection,
@@ -5,10 +9,7 @@ import {
   orderBy,
   query,
 } from 'firebase/firestore'
-import React, { useContext, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import Mensaje from '../Mensaje/Mensaje'
-import { CartContext } from '../../Context/CartContext'
+import './order.css'
 
 const Order = () => {
   const [order, setOrder] = useState([])
@@ -37,7 +38,7 @@ const Order = () => {
     })
   }, [email])
   return (
-    <div>
+    <div className="order-box">
       {order?.lenght === 0 ? (
         <h1>Cargando...</h1>
       ) : (

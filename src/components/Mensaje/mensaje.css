@@ -1,0 +1,7 @@
+.mensaje-box {
+  border-top: 1px solid #fff;
+  width: 35%;
+}
+.mensaje-box h3 {
+  font-size: 2em;
+}

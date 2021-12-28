@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { getFirestore, collection, addDoc } from 'firebase/firestore'
 import { CartContext } from '../../Context/CartContext'
 import Order from '../Order/Order'
+import './cart.css'
 
 const Cart = () => {
   const [form, getForm] = useState({ nombre: '', email: '' })
@@ -41,17 +42,27 @@ const Cart = () => {
         {!goTicket ? (
           <>
             {cart.map((item) => (
-              <div key={item.id}>
-                <p>
-                  {item.cantidad} {item.name} $ {item.precio}
-                </p>
-                <button onClick={() => deleteItem(item)}>Eliminar</button>
+              <div key={item.id} className="result">
+                <h3>Detalle de tu compra</h3>
+                <div className="result-det">
+                  <p>
+                    {item.cantidad} {item.name} $ {item.precio}
+                  </p>
+                  <button
+                    className="B-eliminar"
+                    onClick={() => deleteItem(item)}
+                  >
+                    Eliminar
+                  </button>
+                </div>
               </div>
             ))}
             {totalCompra > 0 ? (
               <>
-                <p>total: {totalCompra}</p>
-                <button onClick={eliminar}>Vaciar Carrito</button>
+                <p className="totalcompra">Total compra: $ {totalCompra}</p>
+                <button className="B-vaciar" onClick={eliminar}>
+                  Vaciar Carrito
+                </button>
               </>
             ) : (
               <>
@@ -60,8 +71,9 @@ const Cart = () => {
               </>
             )}
             <div />
-            <div>
+            <div className="formuser">
               <form metod="POST" onSubmit={finalizar}>
+                <p>Completá tus datos para finalizar la compra</p>
                 <input
                   onChange={llenarForm}
                   type="name"

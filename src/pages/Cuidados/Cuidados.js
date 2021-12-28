@@ -1,9 +1,11 @@
+import '../Contacto/contact.css'
+
 const Cuidados = () => {
   return (
-    <div>
-      <h1>Cuidados</h1>
+    <div className="container2">
+      <h2>Cuidados</h2>
       <h3>Cactus</h3>
-      <p>
+      <p className="text">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
@@ -23,7 +25,7 @@ const Cuidados = () => {
         over the years, sometimes by accident, sometimes on purpose.
       </p>
       <h3>Suculentas</h3>
-      <p>
+      <p className="text">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and

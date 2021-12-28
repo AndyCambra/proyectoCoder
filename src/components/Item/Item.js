@@ -19,7 +19,7 @@ const Item = ({ item }) => {
             <p>Maceta: {item.potsize}</p>
             <p>Precio: ${item.precio}</p>
             <Link to={`/item/${item.id}`}>
-              <p>Ver más...</p>
+              <p className="ver-mas">Ver más...</p>
             </Link>
           </div>
         </div>
