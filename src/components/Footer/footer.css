@@ -1,0 +1,16 @@
+.footer {
+  width: 100vw;
+  background-color: black;
+  height: 90px;
+  padding: 5px 10px;
+  position: static;
+  clear: both;
+  bottom: 0;
+  overflow: visible;
+  top: 93%;
+  padding-left: 20px;
+}
+.foot-text {
+  color: #fff;
+  margin-top: 2px;
+}

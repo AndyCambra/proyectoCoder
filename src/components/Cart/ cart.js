@@ -41,9 +41,9 @@ const Cart = () => {
       <>
         {!goTicket ? (
           <>
+            <h3 className="cart-title">Detalle de tu compra</h3>
             {cart.map((item) => (
               <div key={item.id} className="result">
-                <h3>Detalle de tu compra</h3>
                 <div className="result-det">
                   <p>
                     {item.cantidad} {item.name} $ {item.precio}

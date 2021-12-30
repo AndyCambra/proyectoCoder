@@ -14,13 +14,6 @@ const Header = () => {
       </div>
       <div className="logobox">
         <h2 className="logo">CCBA</h2>
-        <p>
-          <img
-            className="logo-draw"
-            src="https://res.cloudinary.com/danb0chax/image/upload/v1640699030/plantas/Captura_de_Pantalla_2021-12-28_a_la_s_10.40.36_ackidh.png"
-            alt="logo"
-          />
-        </p>
         <p className="subtitle">
           Comprá on-line o disfrutá de nuestra colección.
         </p>

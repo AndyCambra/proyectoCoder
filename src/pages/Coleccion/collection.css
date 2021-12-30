@@ -1,6 +1,7 @@
 .container2 {
   width: 90vmax;
   margin: auto;
+  margin-bottom: 40px;
 }
 h1 {
   font-weight: 200;
